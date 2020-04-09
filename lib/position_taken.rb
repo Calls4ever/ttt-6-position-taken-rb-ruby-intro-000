@@ -1,7 +1,8 @@
 # code your #position_taken? method here!
-def position_taken(input)
+def position_taken(board, input)
   if board[input.to_i-1]!=" "
     return false
-  else return true
+  elsif  board[input.to_i-1]=="X" || board[input.to_i-1]!="O"
+    return true
   end
 end
